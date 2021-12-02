@@ -1,0 +1,155 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Estonia&family=Lobster&family=Poppins:wght@500;600&family=Road+Rage&display=swap');
+
+body{
+    /* margin: 0; 
+    padding: 0; */
+    background-color:teal;
+    background-image: linear-gradient(to bottom , #B5FFFC, #FFDEE9 );
+    color: black; 
+    animation: anime 3s  infinite linear alternate-reverse;
+    font-family: 'Lobster', cursive;
+}  
+@keyframes anime {
+    0%{
+        background-image: linear-gradient(to bottom , #9c6ab3, #FFDEE9 );
+    }
+    30%{
+        background-image: radial-gradient(circle at 20% ,rgb(46, 228, 219), #e95add  );
+    }
+    65%{
+        background-image: linear-gradient(to bottom , #e686c6, #FFDEE9 );
+    }
+}
+.quesy{
+    display: flex;
+}
+h1{
+    text-align: center;
+    font-size: 2.5rem;
+    font-weight: bolder; 
+    background:linear-gradient(75deg, black, blue ,black );
+    -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+} 
+p{
+    margin-bottom: 1.25rem;
+}
+.sec-center{
+    margin: 50px auto 0;
+    width: 90vw; 
+    max-width: 620px; 
+  
+}   
+
+.ques{
+    background-color: rgba(81, 192, 226, 0.5);
+    border-radius: 0.5rem;
+    box-shadow:  5px 4px 7px black;
+    padding:1.5rem 1.5rem 0 1.5rem  ;
+    animation: anime 3s  infinite linear alternate-reverse;
+    border: 3px black solid;
+    margin-bottom: 2rem;
+} 
+.ques-title{
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center;
+}
+.ques-title p{ 
+    color: black;
+    padding-top: 20px; 
+    font-weight: bolder; 
+    font-size: 1.5rem;
+}  
+.btn{
+    font-size: 1.5rem;
+    background: transparent;
+    border-color: transparent; 
+    cursor: pointer;
+    color: darkblue;
+} 
+#are{
+    font-family: 'Lobster', cursive;
+    border-color: transparent;
+    border-radius: transparent; 
+    border-bottom-color: black; 
+    font-size: 1.2rem;
+    outline: none;
+    background: transparent;
+}
+.p{
+    padding-bottom: 20px;
+    display: none;
+} 
+.minus-icon{
+    display: none;
+} 
+.show-text .p{
+    display:block;
+} 
+.show-text .minus-icon{
+    display:inline;
+} 
+.show-text .plus-icon{
+    display:none;
+} 
+#bt{ 
+    text-align: center;
+    background: darkblue;
+    color: white;
+    font-size: 1.5rem; 
+    padding: 10px;
+    margin-bottom: 20px;
+}
+#bt:hover{
+    transition: 0.3s all ease-in-out;
+    transform: translate3d(0px,-5px,5px);
+    box-shadow: 2px 3px 6px black ;
+    border-radius: 8px;
+    border: 2px white solid;
+}
+footer{
+    color: gray;
+    text-align: center;
+}
+#imgg{
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+  
+}
+.section2{
+    margin-left: 100px;
+    padding: 0;
+    
+}
+#img {
+    margin-left: -10px;
+    margin-right: 72px;
+    
+}
+@media only screen and (max-width:600px){
+    body{
+        width: 100%;
+    }
+    h1{
+        font-size: 1.3rem;
+    }
+    #are{
+        width: 100%;
+        font-weight: bolder; 
+        font-size: 1rem;
+        background: transparent;
+    }
+    .ques-title p{ 
+        color: black;
+        padding-top: 0px; 
+        font-weight: bolder; 
+        font-size: 1rem;
+    }  
+    #img,#imgg{
+        display: none;
+    }
+    .ques{
+        margin-left: 13px;
+    }
+}
